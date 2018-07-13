@@ -46,10 +46,6 @@ def get_average_age_for_season(data, season)
       age_array << person["age"].to_f
       age_variable = person["age"].to_f + age_variable
       end
-      age_variable / age_array.size
-      a <=> b
-      end
-      binding.pry
-  return age_array[age_array.size/2]
-end  
+return age_variable / age_array.size
+end     
   
