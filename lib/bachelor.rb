@@ -47,6 +47,7 @@ def get_average_age_for_season(data, season)
       age_array.sort do |a,b|
       a <=> b
       end
+      binding.pry
   return age_array[age_array.size/2]
 end  
   
