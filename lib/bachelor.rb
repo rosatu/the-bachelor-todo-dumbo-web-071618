@@ -41,13 +41,11 @@ end
 
 def get_average_age_for_season(data, season)
   age_array = []
+  age_variable = 0
       data[season].each do |person|
       age_array << person["age"].to_f
+      age_variable = person["age"].to_f + age_variable
       end
-      age_array.sort do |a,b|
-      a <=> b
-      end
-      binding.pry
-  return age_array[age_array.size/2]
-end  
+return (age_variable / age_array.size).round
+end     
   
