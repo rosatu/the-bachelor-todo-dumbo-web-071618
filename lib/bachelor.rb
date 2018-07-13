@@ -1,5 +1,11 @@
+require 'pry'
 def get_first_name_of_season_winner(data, season)
   # code here
+  if data[season].values.include?("Winner")
+    binding.pry
+     data[season]["name"].split[0]
+  end   
+  
 end
 
 def get_contestant_name(data, occupation)
